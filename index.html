@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,600i,700,700i,800,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+    <title> *Red Social*</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="img/asd.svg" class="imagen" alt="foto logo">
+             <nav class="navbar">
+                <ul class="nav">
+                    <li>
+                        <a href="#">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Nosotros</a>
+                    </li>
+                </ul>
+            </nav>
+    </header>
+    <main class="datos">
+        <section class="registrate">
+            <article>
+
+                <h1 class="reg">SIGN-UP: </h1>
+
+                <form action="" class="formulario">
+                    <label for="">Nombre: </label>
+                    <br>
+                    <input type="text" required  minlength="6" maxlength="20" placeholder="  Alejandro">
+                    <br>
+                    <label for="">Apellido: </label>
+                    <br>
+                    <input type="text" required  minlength="6" maxlength="20" placeholder="  Salvio">
+                    <br>
+                    <label for="">Email: </label>
+                    <br>
+                    <input type="email" required  minlength="6" maxlength="20" placeholder="  example@example.com">
+                    <br>
+                    <label for="">Contraseña:</label>
+                    <br>
+                    <input type="password" required minlength="6" maxlength="15" class="pw">
+                    <label for="">Masculino</label>
+                    <input type="radio" name="genero" value="hombre" required> 
+                    <br>
+                    <label for="">Femenino</label>
+                    <input type="radio" name="genero" value="mujer" required>
+                    <br>
+                    <label for="">Fecha de Nacimiento:</label>
+                    <input type="date" name="bday" min="1900-01-01" max="2000-12-31" required>
+                    <br>
+                    <label for="">Pais de Nacimiento: </label>
+                    <select name="pais" id="" class="pais" required>
+                        <option value="argentina">Argentina</option>
+                        <option value="bolivia">Bolivia</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="chile">Chile</option>
+                        <option value="colombia">Colombia</option>
+                        <option value="costarica">Costa Rica</option>
+                        <option value="cuba">Cuba</option>
+                        <option value="ecuador">Ecuador</option>
+                        <option value="elsalvador">El Salvador</option>
+                        <option value="guatemala">Guatemala</option>
+                        <option value="haiti">Haití</option>
+                        <option value="honduras">Honduras</option>
+                        <option value="mexico">Mexico</option>
+                        <option value="nicaragua">Nicaragua</option>
+                        <option value="panama">Panamá</option>
+                        <option value="paraguay">Paraguay</option>
+                        <option value="peru">Perú</option>
+                        <option value="repdominicana">República Domincana</option>
+                        <option value="uruguay">Uruguay</option>
+                        <option value="venezuela">Venezuela</option>
+                    </select>
+                    <br>
+                    <label for="" class="num" required>Numero de Contacto: </label>
+                    <br>
+                    <input class="num" type="tel" required minlength="6" maxlength="15" placeholder="1135004592">
+                    <br>
+                        <input type="submit" name="" id="" class="submit-su">
+                        <input type="reset" onclick="alert('Reiniciado con exito!')">
+
+                </form>
+            </article>
+        </section>
+
+        <section class="login">
+            <h1 class="signin">SIGN-IN</h1>
+            <article>
+                <form action="">
+                    <label for=""> Usuario / Email: </label>
+                    <input type="text" type="email">
+                    <br>
+                    <label for="">Contraseña:</label>
+                    <input type="password" required minlength="6" maxlength="15" class="pw-si">
+                    <br>
+                    <input type="submit" name="" id="" value="Iniciar Sesion" class="submit-si">
+                    <input type="reset" onclick="alert('Reiniciado con exito!')">
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+
+    </footer>
+</body>
+
+</html>
