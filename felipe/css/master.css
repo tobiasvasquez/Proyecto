@@ -1,30 +1,27 @@
 *{
-  margin:0;
+  margin:0 auto;
   padding: 0;
 }
 
 .contenedor{
-    flex-wrap: wrap;
     font-family: 'Roboto', sans-serif;
 }
+.navbar ul li a{
+  text-decoration: none;
+  color: white;
+}
+.navbar ul li a:hover{
+  color: #b3b3b3;
+}
 .navbar{
-  flex-wrap: wrap;
-  margin: 0 auto;
-  overflow: hidden;
   width: 100%;
   background-color: #343F45;
   font-size: 20px;
   color: white;
-  position: fixed;
-  z-index: 100;
-}
-.izquierdo{
-  float:left;
 }
 .derecho{
   width: 40%;
   margin-top: 35px;
-  float: right;
   display: inline-flex;
   list-style: none;
 }
@@ -40,45 +37,31 @@
 }
 .section1{
   background-image: url(../img/background.png);
-  overflow: hidden;
-  margin-top: 50px;
-  margin: 0 auto;
   width: 100%;
   background-color: white;
+  display: flex;
 
 }
 .login{
-    overflow: hidden;
-    width: 40vw;
-    position: relative;
     color: white;
-}
-.title{
-  margin-left: 100px;
-  margin-bottom: -30px;
-  margin-top: 140px;
+    display: flex;
+    width: 30%;
+    margin: 3% 3%;
 }
 .regform{
   background-color: #E05536;
-  position: relative;
-  width: 300px;
-  margin-top: 200px;
-  margin-bottom: 100px;
-  margin-left: 100px;
-  height: 550px;
   border-radius: 20px;
+  text-align: left;
 }
 .tt{
   margin-left: 25px;
   margin-bottom: 30px;
 }
 .info{
-  float: right;
-  width: 40vw;
   position: relative;
   font-size: 40px;
-  margin-top: -450px;
-  margin-right: 100px;
+  width: 50%;
+  padding-top: 240px;
 }
 .futer{
   flex-wrap: wrap;
@@ -92,33 +75,82 @@
   font-size: 50px;
   text-align: center;
 }
-.buton{
-  width: 50px;
-  height: 30px;
+.boton{
   border-radius: 5px;
-  margin-left: 25px;
-  background-color: white;
+  text-align: center;
 }
 
-@media (max-width:400px) {
-  .izquierdo{
-    width: 100%;
-    margin-left: 60px;
+/* Forms */
+
+input{
+  border-radius: 4px;
+  width: 90%;
+}
+button{
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #b3b3b3;
+  border-radius: 5px;
+}
+@media (max-width: 768px){
+  .navbar ul li a{
+    text-decoration: none;
+    color: white;
   }
-  .derecho{
-    width: 100%;
-    margin-left: 20px;
+  .navbar ul li a:hover{
+    color: #b3b3b3;
+  }
+  .section1{
+    display: flex;
   }
   .login{
-    width: 50%;
-    color: black;
+    width: 45%;
   }
   .info{
     width: 50%;
-    font-size: 30px;
+    padding-top: 200px;
+  }   
+}
+
+@media (max-width:676px) {
+  .navbar{
+    height: 150px;
   }
-  .futer{
+  .navbar ul li a{
+    text-decoration: none;
     color: white;
+  }
+  .navbar ul li a:hover{
+    color: #b3b3b3;
+  }
+  .izquierdo{
+    width: 100%;
+    height: 50px;
+    margin-left: 45%;
+  }
+  .logo{
+    margin: 0 auto;
+  }
+  .derecho{
+    width: 100%;
+  }
+  .section1{
+    display: block;
+  }
+  .login{
+    width: 70%;
+    margin: 0 auto;
+    padding-top: 5%;
+  }
+  .regform{
+    padding-bottom: 5%;
+  }
+  .info{
+    padding: 0;
+    margin-top: 15%;
+    width: 80%;
+    padding-bottom: 10%;
   }
 
 }
+
