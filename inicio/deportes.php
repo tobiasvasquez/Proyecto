@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Heebo|Muli|Noto+Sans+KR|Raleway&display=swap" rel="stylesheet"> 
-    <title>Inicio</title>
+    <title>Deportes</title> <!-- aparece el nombre del tema -->
   </head>
   <body>
     <div class="container-fluid contenedor">
@@ -35,20 +35,20 @@
             </div>
             <div class="contenedorTemas">
                 <ul class="temas">
-                    <li><a href="deportes.php">Deportes</a></li>
-                    <li><a href="">Espectaculos</a></li>
-                    <li><a href="">Politica</a></li>
-                    <li><a href="">Economia</a></li>
-                    <li><a href="">Tecnologia</a></li>
-                    <li><a href="">Diseño</a></li>
-                    <li><a href="">Autos</a></li>
+                    <li><a href="">Futbol</a></li>
+                    <li><a href="">Tenis</a></li>
+                    <li><a href="">Basquet</a></li>
+                    <li><a href="">Boxeo</a></li>
+                    <li><a href="">MMA</a></li>
+                    <li><a href="">Polo</a></li>
+                    <li><a href="">F1</a></li>
                     
                 </ul>
             </div>
         </section>
         <section class=" contenedorPosteos">
             <header class="encabezado">
-                <h2><a href="inicio.php">Inicio</a></h2>
+                <h2><a href="deportes.php">Deportes</a></h2>
             </header>
             <div class="posteos">
                 <article class="post">
@@ -89,7 +89,7 @@
                         <h6>NOMBRE APELLIDO</h6>
                     </div>
                     <div class="informe">
-                        <h6 >TECNOLOGIA</h6>    
+                        <h6 >TENIS</h6>    
                         <h3 >Titulo Nota</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officiis numquam repudiandae voluptatibus consequuntur culpa repellendus, laborum quibusdam laboriosam, maxime ab, rem adipisci commodi tempora perspiciatis aperiam consequatur amet. Deserunt accusamus officiis voluptatum dolore, sit eius repellendus, perferendis, eos eaque debitis adipisci corporis illo dolorem suscipit culpa non corrupti nulla.
@@ -105,7 +105,7 @@
                         <h6>NOMBRE APELLIDO</h6>
                     </div>
                     <div class="informe">
-                        <h6 >CINE</h6>    
+                        <h6 >BASQUET</h6>    
                         <h3 >Titulo Nota</h3>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum officiis numquam repudiandae voluptatibus consequuntur culpa repellendus, laborum quibusdam laboriosam, maxime ab, rem adipisci commodi tempora perspiciatis aperiam consequatur amet. Deserunt accusamus officiis voluptatum dolore, sit eius repellendus, perferendis, eos eaque debitis adipisci corporis illo dolorem suscipit culpa non corrupti nulla.
