@@ -1,0 +1,104 @@
+*{
+  padding: 0;
+  margin: 0 auto;
+  
+  
+}
+body{
+  /*background-image: url(../img/background.png);*/
+  
+}
+._contenedor{
+  font-family: 'Nunito Sans', sans-serif;
+  height: 100vh;
+  
+}
+
+._boton{
+  background-color: #C16337;
+  color: white;
+}
+._navbar{
+  width: 100%;
+  background-color: #3F4444;
+  color: white;
+  box-sizing: border-box;
+  z-index: 10;
+  
+  
+ 
+}
+._logo{
+  list-style-type: none;
+  position: relative;
+  margin: 1%;
+}
+._logo a{
+  color: white;
+}
+.botonIngresar{
+  align-items: center;
+  display: flex;
+  margin-bottom: 0;
+  margin-right: 2rem;
+  width: 8%;
+  
+  
+  
+}
+.botonIngresar a:hover{
+  color: #C16337;
+}
+
+
+.botonIngresar a{
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: justify;
+  font-size: 1.4rem;
+}
+
+._footer{
+  
+  background-color: #3F4444;
+  height: 10vh;
+  display: flex;
+  position: relative;
+  margin-top: 4vh;
+}
+.menusFooter{
+  display: flex;
+  
+  
+  list-style-type: none;
+  align-items: center;
+  margin-left: 0rem;
+  box-sizing: border-box;
+  margin-top: 1rem;
+  
+}
+.menusFooter li{
+  margin-left: 4rem;
+}
+
+.menusFooter li a{
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.texto{
+  width: 40%;
+  display: flex;
+  align-items: center;
+
+}
+
+
+@media(max-width: 705px){
+  .texto{
+    visibility: hidden;
+  }
+
+}
