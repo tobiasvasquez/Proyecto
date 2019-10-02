@@ -1,3 +1,13 @@
+<?php
+  require_once("helpers.php");
+  require_once("controladores/funciones.php");
+  if($_POST){
+    $errores =  validar($_POST);
+  if (count($errores) ==0){
+     header("location:inicio.php");
+  }
+  }
+ ?>
 <!doctype html>
 <html lang="es">
 
@@ -22,30 +32,50 @@
 <body>
   <?php include_once 'header.php' ?>
   <main class="main">
-    <section class="row d-flex justify-content-center p-5 mt-5 ">
+    <section class="row d-flex justify-content-center">
 
-      <form class="col-xl-4 col-lg-5 col-md-5 col-sm-8 " method="POST" action="">
+      <form class="col-xl-4 col-lg-5 col-md-5 col-sm-8 mb-5" method="POST" action="">
         <h2 class="register">Registrarse</h2>
-        <br>
+
         <div class="form-group">
           <label for="Nombre">Nombre y Apellido</label>
-          <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido" name="nombre">
+          <input type="text" class="form-control" id="nombre" placeholder="Nombre y Apellido" name="nombre" value="<?=isset($errores["nombre"])? "":old("nombre"); ?>">
+        </div>
+        <div>
+          <?php if(isset($errores["nombre"])):?>
+          <h6 class="alert alert-danger"> <?= $errores["nombre"];?> </h6>
+        <?php endif; ?>
         </div>
         <div class="form-group">
           <label for="Email">Email</label>
           <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" placeholder="Enter email"
-            name="email">
+            name="email" value="<?=isset ($errores["email"])?"":old("email"); ?>">
           <small id="emailHelp" class="form-text text-muted"></small>
+        </div>
+        <div>
+          <?php if(isset($errores["email"])):?>
+          <h6 class="alert alert-danger"> <?= $errores["email"];?> </h6>
+        <?php endif; ?>
         </div>
         <div class="form-group">
           <label for="Password">Contraseña</label>
-          <input type="password" class="form-control" id="Password" placeholder="Password" name="contrasenia">
+          <input type="password" class="form-control" id="Password" placeholder="Password" name="contrasenia" value="<?=isset($errores["contrasenia"])?"":old("contrasenia"); ?>">
+        </div>
+        <div>
+          <?php if(isset($errores["contrasenia"])):?>
+          <h6 class=" alert alert-danger"> <?= $errores["contrasenia"];?> </h6>
+        <?php endif; ?>
         </div>
         <div class="form-group">
           <label for="Password2">Repetir contraseña</label>
-          <input type="password" class="form-control" id="Password2" placeholder="Password" name="contrasenia2">
+          <input type="password" class="form-control" id="Password2" placeholder="Password" name="contrasenia2" value="<?=isset($errores["contrasenia2"])?"":old("contrasenia2"); ?>">
         </div>
-        <button type="submit" class="btn _boton" onclick="alert('Registrado con Exito!')">Registrarse</button>
+        <div>
+          <?php if(isset($errores["contrasenia2"])):?>
+          <h6 class="alert alert-danger"> <?= $errores["contrasenia2"];?> </h6>
+        <?php endif; ?>
+        </div>
+        <button type="submit" class="btn _boton">Registrarse</button>
       </form>
       <article class="texto">
         <h2>Mantenete informado las 24hs sobre los temas que mas te interesan. Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima corporis itaque ipsam nam veniam consequuntur consectetur culpa aut porro quia. Maxime tempore praesentium fugiat iure? </h2>
